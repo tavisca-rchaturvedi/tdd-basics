@@ -69,7 +69,7 @@ namespace BowlingBall.Tests
         }
         // Test for Spare on Last Roll
         [Fact]
-        public void SpareOnLastRoll()
+        public void SpareOnLastFrame()
         {
             int[] rolls = new int[] { 2, 8, 10, 2, 8 };
             game.InitializeRoll(rolls);
