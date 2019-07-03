@@ -1,8 +1,11 @@
-﻿using System;
+﻿using BowlingBall;
+using System;
 
-public class SpareClass
+public class SpareClass : IScoreCalculate
 {
-	public SpareClass()
-	{
-	}
+
+    public int CalculateScore(int[] rolls, int index)
+    {
+        return 10 + rolls[index + 2]; 
+    }
 }
