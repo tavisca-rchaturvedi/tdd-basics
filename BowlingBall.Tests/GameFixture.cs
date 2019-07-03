@@ -45,7 +45,7 @@ namespace BowlingBall.Tests
         // Test for Strike then Spare
         [Fact]
         public void StrikeThenSpareTest(){
-            int[] rolls = new int[] { 10, 2, 8, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6, 1};
+            int[] rolls = new int[] { 10, 2, 8, 1, 6};
             game.InitializeRoll(rolls);
             int score = game.GetScore();
             Assert.Equal(38, score);
@@ -80,10 +80,10 @@ namespace BowlingBall.Tests
         [Fact]
         public void AllStrikes()
         {
-            int[] rolls = new int[] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10};
+            int[] rolls = new int[] { 10, 10, 10, 10, 10};
             game.InitializeRoll(rolls);
             int score = game.GetScore();
-            Assert.Equal(300, score);
+            Assert.Equal(120, score);
         }
 
     }
