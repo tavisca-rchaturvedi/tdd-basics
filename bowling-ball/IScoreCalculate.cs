@@ -6,6 +6,6 @@ namespace BowlingBall
 {
     interface IScoreCalculate
     {
-
+        int CalculateScore(int[] rolls, int index);
     }
 }
